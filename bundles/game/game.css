@@ -1,0 +1,39 @@
+.no-webp .game {
+  background-image: url("../../images/game-bg.png"); }
+
+.game {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.game .container .big-game {
+  width: 100%;
+  height: 56%;
+  margin: 80px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  height: 585px;
+}
+
+@media (max-width: 1320px) {
+  .game .container .big-game {
+    margin: calc(
+        45px + 35 *
+          (
+            (100vw - 360px) / 960
+          )
+      );
+  }
+
+  .game .container .big-game {
+    height: calc(
+        180px + 405 *
+          (
+            (100vw - 360px) / 960
+          )
+      );
+  }
+}
+
+.webp .game { background-image: url(../../images/game-bg.webp); }
